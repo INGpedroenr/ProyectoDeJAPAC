@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use DB;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,4 +26,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function getNombreEstablecimiento ($id){
+        $establecimientos=DB::table('establecimientos')
+        ->where('establecimientos.id', '=', $id)
+        ->select('establecimientos.*')
+        ->first();
+        return $establecimientos;
+    }
+
+
 }

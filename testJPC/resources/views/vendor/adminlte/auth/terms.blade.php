@@ -7,8 +7,8 @@
             </div>
 
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, veniam numquam has te. No suas nonumes recusabo mea, est ut graeci definitiones. His ne melius vituperata scriptorem, cum paulo copiosae conclusionemque at. Facer inermis ius in, ad brute nominati referrentur vis. Dicat erant sit ex. Phaedrum imperdiet scribentur vix no, ad latine similique forensibus vel.</p>
-                <p>Dolore populo vivendum vis eu, mei quaestio liberavisse ex. Electram necessitatibus ut vel, quo at probatus oportere, molestie conclusionemque pri cu. Brute augue tincidunt vim id, ne munere fierent rationibus mei. Ut pro volutpat praesent qualisque, an iisque scripta intellegebat eam.</p>
+                <p>El Sistema sera de uso exclusivo para el departamento de la Subgerencia de Saneamiento y Control Ambiental</p>
+                <p>El uso de este sistema es para capturar y el control de inspecciones formales y resultado de lab externos esto para facilitar el trabjo de ello, y el mal uso de este sistema tendra graves consecuencias.</p>
             </div>
 
             <div class="modal-footer">

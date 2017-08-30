@@ -18,7 +18,7 @@ class CreateTableLExternos extends Migration
             $table->integer('establecimientos_id')->unsigned();
             $table->integer('rl_externos_id')->unsigned();
             $table->integer('ipl_externos_id')->unsigned();
-			$table->integer('ral_externos_id')->unsigned();
+			      $table->integer('ral_externos_id')->unsigned();
             //Referencias
             $table->foreign('establecimientos_id')->references('id')->on('establecimientos');
             $table->foreign('rl_externos_id')->references('id')->on('rl_externos');

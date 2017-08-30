@@ -15,11 +15,11 @@ class CreateTableRAdminisitrativo extends Migration
     {
         Schema::create('r_administrativo', function (Blueprint $table) {
             $table->increments('id');
-            $table->dateTime('fecha_programacion')->nullable;
-            $table->dateTime('fecha_resolutivo')->nullable;
-            $table->decimal('num_meses_cobrar', 11,2)->nullable;
-            $table->string('numresolutivo_administrativo', 30)->nullable;
-            $table->string('num_oficioRA', 30)->nullable;
+            $table->dateTime('fecha_programacion')->nullable();
+            $table->dateTime('fecha_resolutivo')->nullable();
+            $table->decimal('num_meses_cobrar', 11,2);
+            $table->string('numresolutivo_administrativo')->nullable();
+            $table->string('num_oficioRA');
             $table->integer('ci_incumplimiento_id')->unsigned();
             //Referencias
             $table->foreign('ci_incumplimiento_id')->references('id')->on('ci_incumplimiento');

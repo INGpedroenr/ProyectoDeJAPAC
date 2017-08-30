@@ -112,13 +112,13 @@
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="{{ Gravatar::get($user->email) }}" class="img-circle" alt="User Image" />
+                                <img src="{{ Gravatar::get($user->email) }}-m" class="img-circle" alt="User Image" />
                                 <p>
-                                    {{ Auth::user()->name }}
-                                    <small>Bienvenido</small>
+                                    <medium>{{ Auth::user()->name }}</medium>
+                                    <small>{{ Auth::user()->departamento }}</small>
                                 </p>
                             </li>
-                            
+
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">

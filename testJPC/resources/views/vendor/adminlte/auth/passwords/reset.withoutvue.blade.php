@@ -9,9 +9,12 @@
     <body class="login-page">
 
     <div id="app">
+        <h1 style="text-align: center;"><font color="negro">Sistema de Captura de JAPAC</font></h1>
+        <div align="center"><img src="img/japacLogo.png" width="200" height="200"></div>
+        <h2 style="text-align: center;"><font color="negro">Subgerencia de Saneamiento y Control de Calidad</font></h2>
         <div class="login-box">
             <div class="login-logo">
-                <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
+
             </div><!-- /.login-logo -->
 
             @if (session('status'))

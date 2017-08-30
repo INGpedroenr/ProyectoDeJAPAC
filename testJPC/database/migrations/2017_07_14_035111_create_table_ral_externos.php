@@ -15,11 +15,11 @@ class CreateTableRalExternos extends Migration
     {
         Schema::create('ral_externos', function (Blueprint $table) {
             $table->increments('id');
-            $table->dateTime('fecha_programacion')->nullable;
-            $table->dateTime('fecha_resolutivo')->nullable;
-            $table->decimal('num_meses_cobrar', 11,2)->nullable;
-            $table->string('numresolutivo_administrativo', 30)->nullable;
-            $table->string('num_oficioRA', 30)->nullable;
+            $table->dateTime('fecha_programacion');
+            $table->dateTime('fecha_resolutivo');
+            $table->decimal('num_meses_cobrar', 11,2);
+            $table->string('numresolutivo_administrativo');
+            $table->string('num_oficioRA');
             $table->integer('ciil_externos_id')->unsigned();
             //Referencias
             $table->foreign('ciil_externos_id')->references('id')->on('ciil_externos');

@@ -15,9 +15,9 @@ public function up()
     {
             Schema::create('ipl_externos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('num_oficio_iple', 30);
-            $table->dateTime('fecha_elaboracioniple')->nullable;
-            $table->dateTime('fecha_recibido_ofcio')->nullable;
+            $table->string('num_oficio_iple');
+            $table->dateTime('fecha_elaboracioniple');
+            $table->dateTime('fecha_recibido_ofcio');
             $table->integer('rl_externos_id')->unsigned();
             //Referencias
             $table->foreign('rl_externos_id')->references('id')->on('rl_externos');

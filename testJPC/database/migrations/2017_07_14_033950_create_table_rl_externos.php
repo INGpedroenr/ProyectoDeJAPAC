@@ -16,12 +16,11 @@ class CreateTableRlExternos extends Migration
             Schema::create('rl_externos', function (Blueprint $table) {
             $table->increments('id');
             $table->dateTime('fechaentrega_estudios');
-            $table->integer('descargas_rle')->nullable;
-            $table->string('laboratorio', 30)->nullable;
+            $table->integer('descargas_rle')->nullable();
+            $table->string('laboratorio')->nullable();
             $table->decimal('dbo_rle', 11,2);
             $table->decimal('sst_rle', 11,2);
             $table->decimal('gya_rle', 11,2);
-            $table->integer('status')->nullable;
             $table->integer('establecimientos_id')->unsigned();
             //Referencias
             $table->foreign('establecimientos_id')->references('id')->on('establecimientos');

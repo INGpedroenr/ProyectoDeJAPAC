@@ -12,7 +12,7 @@
         <h2 style="text-align: center;"><font color="negro">Subgerencia de Saneamiento y Control de Calidad</font></h2>
         <div class="login-box">
             <div class="login-logo">
-                <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
+                <a href="{{ url('adminlte::home') }}">
             </div><!-- /.login-logo -->
 
             @if (count($errors) > 0)

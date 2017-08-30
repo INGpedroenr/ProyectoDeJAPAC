@@ -13,7 +13,7 @@
         <h2 style="text-align: center;"><font color="negro">Subgerencia de Saneamiento y Control de Calidad</font></h2>
         <div class="register-box">
             <div class="register-logo">
-                <a href="{{ url('/home') }}"></a>
+                <a href="{{ url('adminlte::home') }}"></a>
             </div>
 
             @if (count($errors) > 0)
@@ -74,9 +74,6 @@
                         </div><!-- /.col -->
                     </div>
                 </form>
-
-                
-
                 <a href="{{ url('/login') }}" class="text-center">{{ trans('adminlte_lang::message.membreship') }}</a>
             </div><!-- /.form-box -->
         </div><!-- /.register-box -->

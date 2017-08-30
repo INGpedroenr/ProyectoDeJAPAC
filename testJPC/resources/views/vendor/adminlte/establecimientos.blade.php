@@ -4,7 +4,7 @@
 
 		@section('main-content')
 			@include('flash::message')
-			<h1><font color="negro"> Establecimientos</font></h1>
+			<h1><font color="negro">Establecimientos</font></h1>
 			<td><a href="{{url('/registrarestablecimientos')}}" class="btn btn-success btn-xs"><span>Agregar Establecimiento</span></a></td>
 			<table class="table table-striped">
 				<thead>
@@ -16,7 +16,7 @@
 					<th><font color="negro">Actividad</font></th>
 					<th><font color="negro">Calle</font></th>
 					<th><font color="negro">N° Exterior</font></th>
-					<th><a href="{{url('/pdfEstablecimientos')}}">PDF</a></th>
+					<th><a href="{{url('/pdfestablecimientos')}}" class="btn btn-success btn-xs"><span>PDF</span></a></th>
 				</tr>
 				@foreach($establecimientos as $e)
 					<tr>
@@ -32,23 +32,22 @@
 							<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
 						</a>
 						<a href="{{url('/eliminarestablecimientos')}}/{{$e->id}}" class="btn btn-danger btn-xs">
-							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>	
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 						</a>
 						</td>
-					</tr>	
-				
+					</tr>
 				@endforeach
 				</thead>
 			</table>
 			<div class="text-center">
-			
+
 			</div>
 				<script type="text/javascript">
             		setTimeout(function() {
                 		$(".alert").fadeOut(1500);
             		},1500);
-				</script>		
-		
+				</script>
+
 		@endsection
 
 	@endsection
