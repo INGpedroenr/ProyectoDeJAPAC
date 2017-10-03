@@ -5,7 +5,7 @@
 		@section('main-content')
 			@include('flash::message')
 			<h1><font color="negro">Visitas de Inspeccion</font></h1>
-			<td><a href="{{url('/registrarvisitainspeccion')}}" class="btn btn-success btn-xs"><span>Capturar Visita de Inspeccion</span></a></td>
+			<td><a href="{{url('/seleccionarestablecimiento')}}" class="btn btn-success btn-xs"><span>Capturar Visita de Inspeccion</span></a></td>
 			<table class="table table-striped">
 				<thead>
 				<tr>

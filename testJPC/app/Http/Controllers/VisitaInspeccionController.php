@@ -9,10 +9,20 @@ use DB;
 
 class VisitaInspeccionController extends Controller
 {
-    public function registrar()
+    public function seleccionar(Request $id)
     {
-    		$establecimientos=Establecimientos::all();
-    		return view('adminlte::registrarvisitainspeccion', compact('establecimientos'));
+        $establecimientos=DB::table('establecimientos')
+        ->where('establecimientos.id', '=', $id)
+        ->first();
+        $establecimientos=Establecimientos::all();
+    		return view('adminlte::seleccionarestablecimiento', compact('establecimientos'));
+    }
+
+    public function registrarymostrar ()
+    {
+        $establecimientos=Establecimientos::all();
+        $v_inspeccion=VisitaInspeccion::all();
+        return view('adminlte::registrarvisitainspeccion', compact('establecimientos'));
     }
 
     public function guardar(Request $datos)

@@ -8,18 +8,12 @@
 			<input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
             <!--Buscado de Establecimientos-->
             <div class="form-group">
-                <label for="nombre_establecimiento">Buscar Establecimiento:</label> <span class="glyphicon glyphicon-search"></span>
-
-                <select name="nombre_establecimiento">
-                        @foreach($establecimientos AS $e)
-                            <option value="{{$e->id}}">{{$e->nombre_establecimiento}}</option>
-                        @endforeach
-                </select>
-                <td><a href="{{url('/registrarestablecimientos')}}" class="btn btn-success btn-xs" ><span>Alta de Establecimientos</span></a></td>
+                <label for="nombre_establecimiento">Nombre del Establecimiento:</label>
+								<input type="text" style="width : 450px; heigth : 450px"name="nombre_establecimiento" readonly>
             </div>
             <!--Despliege de los datos solicitados-->
             <div class="form-group">
-        		<label for="razon_social">Razon Social:</label>
+        				<label for="razon_social">Razon Social:</label>
                 <input type="text" style="width : 350px; heigth : 350px"name="razon_social" readonly>
 
                 <label for="actividad">Actividad:</label>

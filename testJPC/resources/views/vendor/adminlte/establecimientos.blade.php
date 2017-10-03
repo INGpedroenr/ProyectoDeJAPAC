@@ -34,7 +34,7 @@
 						<a href="{{url('/eliminarestablecimientos')}}/{{$e->id}}" class="btn btn-danger btn-xs">
 							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 						</a>
-						</td>
+					</td>
 					</tr>
 				@endforeach
 				</thead>

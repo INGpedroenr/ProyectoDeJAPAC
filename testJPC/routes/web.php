@@ -56,9 +56,10 @@ Route::get('/editarestablecimientos/{id}', 'EstablecimientosController@editar');
 //Inspecciones Formales
 //Visita de Inspeccion ✓
 Route::get('/visitainspeccion', 'VisitaInspeccionController@getvisitainspeccion');
-//Registra Visitas de Inspeccion ✓
-Route::get('/registrarvisitainspeccion', 'VisitaInspeccionController@registrar');
-Route::get('/registrarvisitainspeccionc/{id}', 'VisitaInspeccionController@cargadatos');
+//Selecciona un Establecimiento
+Route::get('/seleccionarestablecimiento', 'VisitaInspeccionController@seleccionar');
+//Muestra el Establecimiento y Registra la Visita de Inspeccion
+Route::get('/registrarvisitainspeccion', 'VisitaInspeccionController@registrarymostrar');
 //Guardar Visita de Inspeccion ✓
 Route::post('/guardarvisitainspeccion', 'VisitaInspeccionController@guardar');
 //Actualizar Visita de Inspeccion ✓
